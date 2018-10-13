@@ -8,7 +8,7 @@ public class HealthyBurger extends Burger {
     private double spinachPrice;
     private double quinoaPrice;
 
-    public HealthyBurger ( String breadRollType , double baseBurgerPrice ) {
+    public HealthyBurger ( String breadRollType , String meat , double baseBurgerPrice , String addFive , String addSix , double spinachPrice , double quinoaPrice ) {
         super(breadRollType , meat , baseBurgerPrice);
         this.addFive = addFive;
         this.addSix = addSix;
