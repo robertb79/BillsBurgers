@@ -6,61 +6,64 @@ public class Burger {
     private String meat;
     private double baseBurgerPrice;
 
-    private String lettuce;
-    private String tomato;
-    private String bacon;
-    private String chesse;
+    private String addOne = "lettuce";
+    private String addTwo = "tomato";
+    private String addThree = "bacon";
+    private String addFour = "cheese";
 
-    private double lettucePrice = 0.5;
-    private double tomatoPrice = 0.5;
-    private double baconPrice = 1;
-    private double chessePrice = 1;
+    private double addOnePrice;
+    private double addTwoPrice;
+    private double addThreePrice;
+    private double addFourPrice;
 
-    public Burger(String breadRollType, String meat, double baseBurgerPrice) {
+    public Burger ( String breadRollType , String meat , double baseBurgerPrice ) {
+        this.breadRollType = breadRollType;
+        this.meat = meat;
+        this.baseBurgerPrice = baseBurgerPrice;
     }
 
-
-    public String getBreadRollType() {
+    public String getBreadRollType () {
         return breadRollType;
     }
 
-    public String getMeat() {
+    public String getMeat () {
         return meat;
     }
 
-    public double getBaseBurgerPrice() {
+    public double getBaseBurgerPrice () {
         return baseBurgerPrice;
     }
 
-    public String getLettuce() {
-        return lettuce;
+    public String getAddOne () {
+        return addOne;
     }
 
-    public String getTomato() {
-        return tomato;
+    public String getAddTwo () {
+        return addTwo;
     }
 
-    public String getBacon() {
-        return bacon;
+    public String getAddThree () {
+        return addThree;
     }
 
-    public String getChesse() {
-        return chesse;
+    public String getAddFour () {
+        return addFour;
     }
 
-    public double getLettucePrice() {
-        return lettucePrice;
+    public double getAddOnePrice () {
+        return addOnePrice;
     }
 
-    public double getTomatoPrice() {
-        return tomatoPrice;
+    public double getAddTwoPrice () {
+        return addTwoPrice;
     }
 
-    public double getBaconPrice() {
-        return baconPrice;
+    public double getAddThreePrice () {
+        return addThreePrice;
     }
 
-    public double getChessePrice() {
-        return chessePrice;
+    public double getAddFourPrice () {
+        return addFourPrice;
     }
 }
+
