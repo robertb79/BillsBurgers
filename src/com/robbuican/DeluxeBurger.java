@@ -1,26 +1,26 @@
 package com.robbuican;
 
 public class DeluxeBurger extends Burger {
-    private String chips;
-    private String drink;
+    private String extraOne = "chips";
+    private String extraTwo = "drink";
     private double deluxeBurgerPrice;
 
-    public DeluxeBurger ( String breadRollType , String meat , double baseBurgerPrice , String chips , String drink , double deluxeBurgerPrice ) {
+    public DeluxeBurger ( String breadRollType , String meat , double baseBurgerPrice , String extraOne , String extraTwo , double deluxeBurgerPrice ) {
         super(breadRollType , meat , baseBurgerPrice);
-        this.chips = chips;
-        this.drink = drink;
+        this.extraOne = extraOne;
+        this.extraTwo = extraTwo;
         this.deluxeBurgerPrice = deluxeBurgerPrice;
+    }
+
+    public String getExtraOne () {
+        return extraOne;
+    }
+
+    public String getExtraTwo () {
+        return extraTwo;
     }
 
     public double getDeluxeBurgerPrice () {
         return deluxeBurgerPrice;
-    }
-
-    public String getChips() {
-        return chips;
-    }
-
-    public String getDrink() {
-        return drink;
     }
 }

@@ -2,35 +2,33 @@ package com.robbuican;
 
 public class HealthyBurger extends Burger {
 
-    private String spinach;
-    private String quinoa;
+    private String addFive = "spinach";
+    private String addSix = "quinoa";
 
-    private double spinachPrice = 0.5;
-    private double quinoaPrice = 1;
+    private double spinachPrice;
+    private double quinoaPrice;
 
-    public HealthyBurger ( String meat , long baseBurgerPrice , String spinach , String quinoa , double spinachPrice , double quinoaPrice ) {
-        super("brown rye roll" , meat , baseBurgerPrice);
-        this.spinach = spinach;
-        this.quinoa = quinoa;
+    public HealthyBurger ( String breadRollType , String meat , double baseBurgerPrice , String addFive , String addSix , double spinachPrice , double quinoaPrice ) {
+        super(breadRollType , meat , baseBurgerPrice);
+        this.addFive = addFive;
+        this.addSix = addSix;
         this.spinachPrice = spinachPrice;
         this.quinoaPrice = quinoaPrice;
     }
 
-    public String getSpinach() {
-        return spinach;
+    public String getAddFive () {
+        return addFive;
     }
 
-    public String getQuinoa () {
-        return quinoa;
+    public String getAddSix () {
+        return addSix;
     }
 
-    public double getSpinachPrice() {
+    public double getSpinachPrice () {
         return spinachPrice;
     }
 
-    public double getChinoaPrice() {
+    public double getQuinoaPrice () {
         return quinoaPrice;
     }
-
-
 }
